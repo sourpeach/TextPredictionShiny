@@ -13,7 +13,7 @@ The shiny app can be access at <https://sourpeach.shinyapps.io/TextPredictionShi
 - The resulting data was the collection of phrases or tokens in 1 to 4 grams decscending in frequency of occurence.
 
 # The Prediction Model
-- The prediction model in "Input.R" is a model previously develped in another project and refined further to increase the accuracy of the prediction.
+- The prediction model in "Input.R" is a model previously developed in another project and refined further to increase the accuracy of the prediction.
 - The model takes in a phrase and predicts the last words using 4 gram to 1 gram. Where the last 3 word of a phrase is taken if the user enters more than 3 words and match the 3 words to the beginning of 4 grams and output the last word as the prediction. 
 - During testing some refinining were made to increase accuracy such as stemming the user input words such as removing "s" from a word *example: "helps" -> "help*.
 - Another step was to find words through association such as finding two words not at the beginning but anywhere in an Ngram and output the remaining word from the Ngram match as an prediction.
